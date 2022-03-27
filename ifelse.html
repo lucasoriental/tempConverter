@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vai tomar no cu</title>
+
+    <style>
+        *{
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body id="corpoo">
+    <h1 id="titulo">Fodase</h1>
+</body>
+
+    <script>
+        var yourvel = window.prompt('your velocity')
+        var roadvel = window.prompt('Max Road Velocity')
+        var corpo = document.querySelector("#corpoo")
+        var titulu = document.querySelector('#titulo')
+
+        if(yourvel > roadvel){
+            titulu.innerHTML = 'MULTADO'
+            corpo.style.background = 'red'
+        } else{
+            titulu.innerHTML = 'LIMPO'
+            corpo.style.background = 'green'
+        }
+    </script>
+
+</html>

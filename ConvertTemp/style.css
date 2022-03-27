@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+body{
+    background-color: rgb(68, 68, 68);
+}
+
+h1{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+#container{
+    text-align: center;
+}
+
+#celsius{
+    border: 1px solid red;
+    border-radius: 10px;
+    height: 350px;
+    width: 400px;
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(179, 16, 143);
+    margin: 5px;
+}
+
+#fahrenheit{
+    border: 1px solid blue;
+    border-radius: 10px;
+    height: 350px;
+    width: 400px;
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(21, 170, 58);
+    margin: 5px;
+}
+
+#kelvin{
+    border: 1px solid green;
+    background-color: rgb(29, 82, 197);
+    border-radius: 10px;
+    height: 350px;
+    width: 400px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+}
+
+.titulo{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20pt; 
+    margin: 10px auto;  
+}
+
+.campo{
+    width: 150px;
+    height: 30px;
+}
+
+.convert{
+    margin: 25px 0 5px 0;
+    border: 1px solid rgb(73, 73, 73);
+    height: 50px;
+    width: 300px;
+    font-size: 11pt;
+    border-radius: 10px;
+}
+
+input[type="submit"].convert:hover{
+    border: 1.5px solid rgb(43, 43, 43);
+    background-color: rgb(218, 218, 218);
+    cursor: pointer;
+}

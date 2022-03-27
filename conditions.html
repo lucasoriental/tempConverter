@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditions</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: arial;
+        }
+
+        body{
+            background-color: gray;
+        }
+
+        h1{
+            margin-top: 10px;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        #container{
+            width: 400px;
+            height: 400px;
+            background-color: rgb(208, 208, 208);
+            border: 1px black solid;
+            border-radius: 20px;
+            text-align: center;
+            margin: 50px auto;
+        }
+
+        #pInfo{  
+            margin: 20px 0px;
+        }
+
+        #vehicle{
+            margin: 10px 0px;
+        }
+
+        #velocity{ 
+            margin: 10px 0px;
+            
+        }
+
+        #butao{
+            width: 120px;
+            height: 25px;
+            font-size: 10pt;
+            margin-top: 10px;
+        }
+
+        .titulo{ 
+            font-size: 13pt;
+            text-align: left; 
+        }
+
+        input[name="campoTxt"]{
+            height: 25px;
+            width: 300px;
+        }
+
+        .vehicle{
+            font-size: 14pt;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Do you need to pay a traffic ticket?</h1>
+
+    <div id="container">
+        <div id="pInfo">
+            <label class="titulo" for="fname">Your first name here:</label><br>
+            <input type="text" name="campoTxt" > <br>
+
+            <label class="titulo" for="lname">Your last name here:</label><br>
+            <input type="text" name="campoTxt" > <br>
+
+            <label class="titulo" for="birthdate">Your Birth Date here:</label><br>
+            <input type="date" name="campoTxt" > <br>
+        </div>
+
+        <div id="vehicle">
+            <label class="titulo" for="typeOfVehicle">Choose your Vehicle</label><br>
+            <input type="radio" name="campoVehicle" value="motocycle">
+            <label class="vehicle" >Motocycle</label>
+            <input type="radio" name="campoVehicle" value="car">
+            <label class="vehicle" >Car</label>
+            <input type="radio" name="campoVehicle" value="truck">
+            <label class="vehicle" >Truck</label>
+        </div> 
+
+        <div id="velocity">
+            <label class="titulo" for="velocity">Max speed allowed on the road (km/h)</label><br>
+            <input id="velocidade1" type="number" name="campoTxt"> <br>
+            <label class="titulo" for="velocity">Insert your speed (km/h)</label><br>
+            <input id="velocidade2" type="number" name="campoTxt"> <br>
+        </div>
+        <input type="submit" id="butao" onclick="enviar()" value="Submit" >
+    </div>
+
+</body>
+
+<script>
+    let corpo = document.querySelector('#container')
+    let yourVel = document.querySelector('#velocidade2')
+    let himVel = document.querySelector('#velocidade1')
+
+    function enviar(){
+        if(yourVel > 50 || yourVel == 50){
+            alert('multado')
+            corpo.style.background = 'red'
+        } else { 
+            alert('limpo')
+            corpo.style.background = 'green'
+        }
+    }
+
+</script>
+
+</html>

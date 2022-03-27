@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- I'll create a project to convert temperatures:
+
+        Temperature Converter
+
+        Celsius to fahrenheit
+        Celsius to Kelvin 
+        fahrenheit to Celsius
+        fahrenheit to Kelvin 
+        Kelvin to fahrenheit
+        Kelvin to Celsius
+    -->
+
+    <h1>TEMPERATURE CONVERSION</h1>
+
+    <div id="container">
+        <div id="celsius">
+            <p class="titulo">Celsius to Fahrenheit</p>
+            <input class="campo" placeholder="ºC" type="number"> >>
+            <input class="campo" placeholder="ºF"type="text"><br>
+            <input class="convert" type="submit" value="Convert" onClick="CelToFah()">
+
+            <p class="titulo">Celsius to Kelvin</p>
+            <input class="campo" placeholder="ºC" type="number"> >>
+            <input class="campo" placeholder="ºK" type="text"> <br>
+            <input class="convert" type="submit" value="Convert" onClick="CelToKel()">
+        </div>
+
+        <div id="fahrenheit">
+            <p class="titulo">Fahrenheit to Celsius</p>
+            <input class="campo" placeholder="ºF" type="number"> >>
+            <input class="campo" placeholder="ºC" type="text" > <br>
+            <input class="convert" type="submit" value="Convert" onClick="FahToCel()">
+
+            <p class="titulo">Fahrenheit to Kelvin</p>
+            <input class="campo" placeholder="ºF" type="number"> >>
+            <input class="campo" placeholder="ºK" type="text" > <br>
+            <input class="convert" type="submit" value="Convert" onClick="FahToKel()">
+        </div>
+
+        <div id="kelvin">
+            <p class="titulo">Kelvin to Celsius</p>
+            <input class="campo" placeholder="ºK" type="number"> >>
+            <input class="campo" placeholder="ºC" type="text"> <br>
+            <input class="convert" type="submit" value="Convert" onClick="KelToCel()">
+
+            <p class="titulo">Kelvin to Fahrenheit</p>
+            <input class="campo" placeholder="ºK" type="number"> >>
+            <input class="campo" placeholder="ºF" type="text"> <br>
+            <input class="convert" type="submit" value="Convert" onClick="KelToFah()">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
